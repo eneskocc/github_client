@@ -5,7 +5,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import TextField from '@material-ui/core/TextField';
+import Input from '@material-ui/core/Input';
 import Button from '@material-ui/core/Button';
 //import AccountCircle from '@material-ui/icons/AccountCircle';
 //import Badge from '@material-ui/core/Badge';
@@ -66,7 +67,9 @@ class AppBar extends Component {
                                 <Link to={"/"} style={{all:"unset"}}>{"Material-UI Starter"}</Link>
                             </Typography>
 
-                        <Button color="inherit">Login</Button>
+                        <Button color="inherit"><form className={classes.root} noValidate autoComplete="off">
+                            <TextField id="standard-basic" label="Standard" />
+                        </form></Button>
                     </Toolbar>
                 </AppBarMUI>
                 <TemporaryDrawer

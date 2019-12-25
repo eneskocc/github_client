@@ -47,6 +47,12 @@ class TemporaryDrawer extends Component {
                             <ListItemText primary={'TestPage'} />
                         </ListItem>
                     </NavLink>
+                    <NavLink className={"unactivePage"}  activeClassName="activePage" exact to="/test" style={style_unset}>
+                        <ListItem button key={'TestPage'}>
+                            <ListItemIcon><SearchIcon /></ListItemIcon>
+                            <ListItemText primary={'TestPage'} />
+                        </ListItem>
+                    </NavLink>
 
                 </List>
                 <Divider />
